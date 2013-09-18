@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/availableClassroomsFrameLayout">
+    <LinearLayout 
+    	android:layout_width="fill_parent" 
+    	android:id="@+id/linearLayout1" 
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal">
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:layout_gravity="center_horizontal"
+        	android:id="@+id/availableClassroomsTitle" 
+        	android:textAppearance="?android:attr/textAppearanceMedium">
+        </TextView>
+    </LinearLayout>
+    
+    <LinearLayout 
+ 		android:orientation="vertical"
+ 		android:id="@+id/availableClassroomsLoading"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="fill_parent">
+ 		<include android:visibility="visible"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="fill_parent"
+ 			layout="@layout/fullscreen_loading_indicator"/>
+ 	</LinearLayout>
+    
+    <HorizontalScrollView
+		android:id="@+id/horizontalScrollView"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<ListView android:id="@+id/availableClassroomsResultListView"
+			  android:layout_height="wrap_content"
+			  android:layout_width="wrap_content"
+			  >
+    	</ListView>
+	</HorizontalScrollView>
+ 	
+</FrameLayout>

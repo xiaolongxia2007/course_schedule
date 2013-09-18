@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@android:color/background_dark"
+	android:id="@android:id/tabhost">
+	
+	<LinearLayout 
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+		<TabWidget
+			android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone"/>
+			
+		<FrameLayout
+			android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="0.0dip"
+			android:layout_weight="1.0"/>
+			
+		<RadioGroup 
+			android:id="@+id/tab_group"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:gravity="center_vertical"
+			android:layout_gravity="bottom"
+			android:orientation="horizontal"
+			android:background="@drawable/tab_bg_selector"
+			android:checkedButton="@+id/search">
+			
+			<RadioButton 
+				android:id="@id/search"
+				android:tag="tab1"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1.0"
+				android:layout_marginTop="1.0dip"
+				android:text="@string/search"
+				android:button="@null"
+				
+				android:gravity="center"
+				android:background="@drawable/tab_bg_selector"/>
+			
+<!-- 			<RadioButton 
+				android:id="@id/avaiable_classrooms"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1.0"
+				android:layout_marginTop="1.0dip"
+				android:text="@string/avaiable_classrooms"
+				android:button="@null"
+				android:gravity="center"
+				android:background="@drawable/tab_bg_selector"
+				/> -->
+				
+			<RadioButton 
+				android:id="@+id/about"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1.0"
+				android:layout_marginTop="1.0dip"
+				android:text="@string/about"
+				android:button="@null"
+				android:gravity="center"
+				android:background="@drawable/tab_bg_selector"/>
+		</RadioGroup>
+	</LinearLayout>	
+</TabHost>

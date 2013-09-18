@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent"
+  	android:id="@+id/mainFrameLayout">
+  	
+  	<LinearLayout
+  		android:orientation="vertical"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:layout_gravity="fill_vertical"
+  		android:id="@+id/loding"
+  		android:visibility="visible"
+  		>
+  		<TextView android:id="@+id/searchResultTextView"
+	    		  android:layout_width="wrap_content"
+	    		  android:layout_height="wrap_content"
+	    		  android:text="@string/searchResult"
+	    		  android:textAppearance="?android:attr/textAppearanceLarge"
+	    		  >
+	    </TextView>
+  	</LinearLayout>
+  	<LinearLayout 
+  		android:orientation="vertical"
+  		android:id="@+id/searchResultLoading"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent">
+  		<include android:visibility="visible"
+  			android:layout_width="fill_parent"
+  			android:layout_height="fill_parent"
+  			layout="@layout/fullscreen_loading_indicator"/>
+  		</LinearLayout>
+  	
+  	<HorizontalScrollView
+		android:id="@+id/horizontalScrollView"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent">
+		<ListView android:id="@+id/searchResultListView"
+				  android:layout_height="wrap_content"
+				  android:layout_width="wrap_content"
+				  >
+	    </ListView>
+	</HorizontalScrollView>
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ScheduleActivity!</string>
+    <string name="app_name">我爱上自习</string>
+    <string name="btn_create_database">Create Database</string>
+    <string name="btn_query">Query</string>
+    
+<!-- for main layout -->
+	<string name="search">搜索</string>
+	<string name="searchBuildingOnly">只搜教学楼</string>
+	<string name="nightSearch">童鞋，太晚了，洗洗睡吧</string>
+	<string name="searchResult"></string>
+	<string name="avaiable_classrooms">可用自习室</string>
+	<string name="about">关于</string>
+	<string name="duration">起止节数</string>
+	<string name="start">开始节数</string>
+	<string name="end">结束节数</string>
+	<string name="whichDay">哪一天    </string>
+	<string name="to">到</string>
+	<string name="classroom">教室</string>
+	<string name="building">教学楼    </string>
+	<string name="startClass">开始节数</string>
+	<string name="endClass">结束节数</string>
+	<string name="searchTip">请选择自习开始与结束的节数与教学楼</string>
+	<string name="help">
+		1.\t搜索\t搜索指定时间段未被占用的教室.\n2.在搜索界面摇一摇可以搜索当前时间下可用的自习室.\n3.\"无\"表示没有课,\"有\"表示有课.
+	</string>
+
+<!-- for fullscreen_loding_indicator layout -->
+	<string name="loading">loading</string>
+
+<!-- Array for class spinner -->
+	<string-array name="class_selector">
+		<item>第一节</item>
+		<item>第二节</item>
+		<item>第三节</item>
+		<item>第四节</item>
+		<item>第五节</item>
+		<item>第六节</item>
+	</string-array>
+
+<!-- Array for which day spinner -->
+	<string-array name="day_selector">
+		<item>今天</item>
+		<item>明天</item>
+	</string-array>
+	
+<!-- first time run application -->
+	<string name="first_time_run">true</string>
+</resources>

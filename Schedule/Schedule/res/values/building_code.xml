@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Array for building spinner -->
+	<string-array name="building_selector">
+		<item>04楼</item>
+		<item>05楼</item>
+		<item>08楼</item>
+		<item>08楼后院</item>
+		<item>11楼</item>
+		<item>15楼</item>
+		<item>15楼英专</item>
+		<item>18楼</item>
+		<item>19楼</item>
+		<item>20楼</item>
+		<item>23楼</item>
+		<item>24楼</item>
+		<item>26楼A区</item>
+		<item>26楼B区</item>
+		<item>西阶</item>
+		<item>综合楼</item>
+	</string-array>
+	
+	<string-array name="building_id">
+		<item>22</item>
+		<item>1048</item>
+		<item>45</item>
+		<item>1076</item>
+		<item>20</item>
+		<item>24</item>
+		<item>1052</item>
+		<item>18</item>
+		<item>32</item>
+		<item>21</item>
+		<item>15</item>
+		<item>1042</item>
+		<item>1084</item>
+		<item>1085</item>
+		<item>28</item>
+		<item>1070</item>
+	</string-array>
+</resources>
